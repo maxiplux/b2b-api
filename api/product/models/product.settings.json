@@ -1,0 +1,38 @@
+{
+  "connection": "default",
+  "collectionName": "products",
+  "info": {
+    "name": "Product"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "price": {
+      "type": "float"
+    },
+    "quantity": {
+      "type": "float"
+    },
+    "is_available": {
+      "type": "boolean",
+      "default": true
+    },
+    "categories": {
+      "model": "categories"
+    },
+    "unit": {
+      "model": "units"
+    }
+  }
+}

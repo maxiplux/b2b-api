@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/countrystates",
+      "handler": "countrystate.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/countrystates/count",
+      "handler": "countrystate.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/countrystates/:id",
+      "handler": "countrystate.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/countrystates",
+      "handler": "countrystate.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/countrystates/:id",
+      "handler": "countrystate.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/countrystates/:id",
+      "handler": "countrystate.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

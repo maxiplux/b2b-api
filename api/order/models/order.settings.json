@@ -1,0 +1,23 @@
+{
+  "info": {
+    "name": "Order"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "comments": {
+      "type": "richtext"
+    },
+    "state": {
+      "model": "states"
+    },
+    "customer": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  },
+  "connection": "default",
+  "collectionName": "orders"
+}

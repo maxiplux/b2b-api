@@ -1,0 +1,21 @@
+{
+  "info": {
+    "name": "countrystate"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "country": {
+      "model": "countries"
+    }
+  },
+  "connection": "default",
+  "collectionName": "countrystates"
+}

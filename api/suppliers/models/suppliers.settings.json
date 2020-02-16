@@ -1,0 +1,28 @@
+{
+  "info": {
+    "name": "suppliers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "is_active": {
+      "type": "boolean"
+    },
+    "email": {
+      "type": "email"
+    },
+    "comments": {
+      "type": "richtext"
+    }
+  },
+  "connection": "default",
+  "collectionName": "suppliers"
+}
